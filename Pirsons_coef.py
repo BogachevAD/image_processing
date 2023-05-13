@@ -2,12 +2,18 @@ from PIL import Image
 from PIL import ImageOps
 import math
 
+# Вводим количество разных углов alpha 1 (pict_num). От него будем отталкиваться
 pict_num = 7
+
+#Создаем несколько пустых списков, для каждого из углов alpha 1
 spisok = [[] for i in range(int(pict_num))]
 #spisok = [[] for i in range(int(input(f"Введите количество альфа 1: ")))]
 print(spisok)
+
+#Топорный список, просто чтобы прога норм функционировала
 topor_spisok = []
 
+# Циклим перебор всех изображений из папки с проектом
 for k in range(0, pict_num):
     for l in range(0, 21):
         for m in range(0, 21):
